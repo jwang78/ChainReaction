@@ -1,4 +1,4 @@
-package ChainReaction.view;
+package view;
 
 import javafx.event.ActionEvent;
 
@@ -18,7 +18,7 @@ public interface Controls {
      * Updates the score based on the provided score map.
      * @param scoreMap The map of scores.
      * */
-    public void updateScore(java.util.Map<ChainReaction.model.Player, Integer> scoreMap);
+    public void updateScore(java.util.Map<model.Player, Integer> scoreMap);
     
     /**
      * Returns the node underlying this Controls.

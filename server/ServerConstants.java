@@ -1,4 +1,4 @@
-package ChainReaction.server;
+package server;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;

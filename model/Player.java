@@ -1,9 +1,9 @@
-package ChainReaction.model;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ChainReaction.game.Constants;
+import game.Constants;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 

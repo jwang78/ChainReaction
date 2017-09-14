@@ -1,10 +1,10 @@
-package ChainReaction.server;
+package server;
 
 import java.util.List;
 
-import ChainReaction.model.Move;
-import ChainReaction.model.CRBoard;
-import ChainReaction.view.BoardView;
+import model.Move;
+import model.CRBoard;
+import view.BoardView;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 

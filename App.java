@@ -1,13 +1,13 @@
-package ChainReaction;
+
 
 
 import java.io.IOException;
 
-import ChainReaction.application.ApplicationType;
-import ChainReaction.application.LauncherDialog;
-import ChainReaction.net.ResizeWindowEvent;
-import ChainReaction.server.CRServer;
-import ChainReaction.view.PaneOrganizer;
+import application.ApplicationType;
+import application.LauncherDialog;
+import net.ResizeWindowEvent;
+import server.CRServer;
+import view.PaneOrganizer;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;

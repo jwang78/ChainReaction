@@ -1,13 +1,14 @@
-package ChainReaction.view;
+package view;
 
 import java.io.File;
 import java.io.IOException;
 
-import ChainReaction.game.Constants;
-import ChainReaction.game.CRInstance;
-import ChainReaction.net.CRClient;
-import ChainReaction.server.ImageUtils;
-import ChainReaction.server.ServerConstants;
+import view.CRControls;
+import game.Constants;
+import game.CRInstance;
+import net.CRClient;
+import server.ImageUtils;
+import server.ServerConstants;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;

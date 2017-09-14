@@ -1,7 +1,7 @@
-package ChainReaction.game;
+package game;
 
-import ChainReaction.view.BoardView;
-import ChainReaction.view.Controls;
+import view.BoardView;
+import view.Controls;
 
 /**
  * Represents a graphical Othello instance; these methods are required for the

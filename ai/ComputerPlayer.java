@@ -1,6 +1,7 @@
-package ChainReaction.ai;
+package ai;
 
 import java.util.ArrayList;
+
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -18,12 +19,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import ChainReaction.game.Constants;
-import ChainReaction.model.Move;
-import ChainReaction.model.CRBoard;
-import ChainReaction.model.Piece;
-import ChainReaction.model.Player;
-import ChainReaction.model.PlayerType;
+import game.Constants;
+import model.Move;
+import model.CRBoard;
+import model.Piece;
+import model.Player;
+import model.PlayerType;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 
@@ -46,7 +47,6 @@ public class ComputerPlayer extends Player {
     private int _depth;
     // The weights of each tile on the board; dimensions must be consistent with
     // boards provided on turn notification.
-    private BoardWeights _boardWeights;
     // Whether the ComputerPlayer is currently working; if so, will not respond
     // to more turn notifications.
     private boolean _computing;
@@ -79,10 +79,9 @@ public class ComputerPlayer extends Player {
      * @param ID
      *            The unique identification number assigned to this player.
      */
-    public ComputerPlayer(Paint paint, int difficulty, BoardWeights weights, String name, int ID) {
+    public ComputerPlayer(Paint paint, int difficulty, String name, int ID) {
         super(paint, PlayerType.COMPUTER, name, ID);
         _depth = difficulty;
-        _boardWeights = weights;
         _executor = Executors.newFixedThreadPool(Constants.NUM_THREADS);
     }
     
@@ -98,7 +97,7 @@ public class ComputerPlayer extends Player {
      *            AI does not support more than two players.
      */
     @Override
-    public void notifyOfTurn(CRBoard board, Player otherPlayer) {
+    public void notifyOfTurn(final CRBoard board, Player otherPlayer) {
         // Checks if the AI is currently computing a move
         if (_computing) {
             return;

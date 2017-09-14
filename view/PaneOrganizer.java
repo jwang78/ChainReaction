@@ -1,12 +1,12 @@
-package ChainReaction.view;
+package view;
 
 import java.io.IOException;
 
-import ChainReaction.application.ApplicationType;
-import ChainReaction.game.ChainReaction;
-import ChainReaction.game.CRInstance;
-import ChainReaction.net.CRClient;
-import ChainReaction.net.ResizeWindowEvent;
+import application.ApplicationType;
+import game.ChainReaction;
+import game.CRInstance;
+import net.CRClient;
+import net.ResizeWindowEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -18,16 +18,16 @@ public class PaneOrganizer {
     // The root node
     private BorderPane _root;
     // The OthelloInstance
-    private CRInstance _othello;
+    private CRInstance _instance;
     /**
      * Creates a PaneOrganizer given an ApplicationType
      * @param type The Applicationtype for this PaneOrganizer
      * */
     public PaneOrganizer(ApplicationType type) throws IOException {
         _root = new BorderPane();
-        _othello = (type == ApplicationType.STANDALONE)? ChainReaction.newChainReaction() : CRClient.newClient();
-        _root.setRight(_othello.getControls().getNode());
-        _root.setCenter(_othello.getBoardView().getNode());
+        _instance = (type == ApplicationType.STANDALONE)? ChainReaction.newChainReaction() : CRClient.newClient();
+        _root.setRight(_instance.getControls().getNode());
+        _root.setCenter(_instance.getBoardView().getNode());
     }
     
     /**

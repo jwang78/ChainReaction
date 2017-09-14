@@ -1,4 +1,4 @@
-package ChainReaction.view;
+package view;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -12,11 +12,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-import ChainReaction.game.Constants;
-import ChainReaction.game.ChainReaction;
-import ChainReaction.game.CRInstance;
-import ChainReaction.model.Player;
-import ChainReaction.net.CRClient;
+import game.Constants;
+import game.ChainReaction;
+import game.CRInstance;
+import model.Player;
+import net.CRClient;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;

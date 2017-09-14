@@ -1,6 +1,7 @@
-package ChainReaction.game;
+package game;
 
 import java.io.IOException;
+
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,19 +9,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import ChainReaction.App;
-import ChainReaction.ai.BoardWeights;
-import ChainReaction.ai.ComputerPlayer;
-import ChainReaction.model.HumanPlayer;
-import ChainReaction.model.Move;
-import ChainReaction.model.CRBoard;
-import ChainReaction.model.Piece;
-import ChainReaction.model.Player;
-import ChainReaction.model.PlayerType;
-import ChainReaction.view.BoardView;
-import ChainReaction.view.Controls;
-import ChainReaction.view.CRBoardView;
-import ChainReaction.view.CRControls;
+import ai.ComputerPlayer;
+import model.HumanPlayer;
+import model.Move;
+import model.CRBoard;
+import model.Piece;
+import model.Player;
+import model.PlayerType;
+import view.BoardView;
+import view.Controls;
+import view.CRBoardView;
+import view.CRControls;
 import javafx.animation.Animation;
 import javafx.animation.Animation.Status;
 import javafx.animation.KeyFrame;
@@ -246,7 +245,7 @@ public class ChainReaction implements CRInstance {
         if (difficulty == 0) {
             _players.set(playerNum - 1, new HumanPlayer(prev.getColor(), prev.getAssignedName(), prev.getID()));
         } else {
-            _players.set(playerNum - 1, new ComputerPlayer(prev.getColor(), difficulty, new BoardWeights(),
+            _players.set(playerNum - 1, new ComputerPlayer(prev.getColor(), difficulty,
                     prev.getAssignedName(), prev.getID()));
         }
         prev.die();

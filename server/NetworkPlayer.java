@@ -1,8 +1,8 @@
-package ChainReaction.server;
+package server;
 
-import ChainReaction.model.CRBoard;
-import ChainReaction.model.Player;
-import ChainReaction.model.PlayerType;
+import model.CRBoard;
+import model.Player;
+import model.PlayerType;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 

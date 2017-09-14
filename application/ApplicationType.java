@@ -1,4 +1,4 @@
-package ChainReaction.application;
+package application;
 
 /**
  * Represents the type of application this is.

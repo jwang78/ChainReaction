@@ -1,9 +1,9 @@
-package ChainReaction.view;
+package view;
 
 import java.util.List;
 
-import ChainReaction.model.Move;
-import ChainReaction.model.CRBoard;
+import model.Move;
+import model.CRBoard;
 
 /**
  * Represents the board viewing part of the user interface. These methods are

@@ -1,16 +1,15 @@
-package ChainReaction.view;
+package view;
 
 import java.io.IOException;
 import java.util.List;
 
-import ChainReaction.App;
-import ChainReaction.game.Constants;
-import ChainReaction.game.ChainReaction;
-import ChainReaction.game.CRInstance;
-import ChainReaction.model.Move;
-import ChainReaction.model.CRBoard;
-import ChainReaction.model.Piece;
-import ChainReaction.model.Player;
+import game.Constants;
+import game.ChainReaction;
+import game.CRInstance;
+import model.Move;
+import model.CRBoard;
+import model.Piece;
+import model.Player;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

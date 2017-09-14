@@ -1,4 +1,4 @@
-package ChainReaction.model;
+package model;
 
 /**
  * The Move class represents a move on the OthelloBoard. Moves encapsulate the

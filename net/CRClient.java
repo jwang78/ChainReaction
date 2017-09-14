@@ -1,4 +1,4 @@
-package ChainReaction.net;
+package net;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -13,24 +13,23 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-import ChainReaction.ai.BoardWeights;
-import ChainReaction.ai.ComputerPlayer;
-import ChainReaction.game.Constants;
-import ChainReaction.game.ChainReaction;
-import ChainReaction.game.CRInstance;
-import ChainReaction.model.HumanPlayer;
-import ChainReaction.model.Move;
-import ChainReaction.model.CRBoard;
-import ChainReaction.model.Player;
-import ChainReaction.model.PlayerType;
-import ChainReaction.server.ImageUtils;
-import ChainReaction.server.NetworkPlayer;
-import ChainReaction.server.ServerConstants;
-import ChainReaction.view.BoardView;
-import ChainReaction.view.Controls;
-import ChainReaction.view.CRBoardView;
-import ChainReaction.view.CRClientControls;
-import ChainReaction.view.CRControls;
+import ai.ComputerPlayer;
+import game.Constants;
+import game.ChainReaction;
+import game.CRInstance;
+import model.HumanPlayer;
+import model.Move;
+import model.CRBoard;
+import model.Player;
+import model.PlayerType;
+import server.ImageUtils;
+import server.NetworkPlayer;
+import server.ServerConstants;
+import view.BoardView;
+import view.Controls;
+import view.CRBoardView;
+import view.CRClientControls;
+import view.CRControls;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -336,7 +335,7 @@ public class CRClient implements CRInstance {
             _player = new HumanPlayer(prev.getColor(), prev.getAssignedName(), prev.getID());
             
         } else {
-            _player = new ComputerPlayer(prev.getColor(), difficulty, new BoardWeights(), prev.getAssignedName(),
+            _player = new ComputerPlayer(prev.getColor(), difficulty, prev.getAssignedName(),
                     prev.getID());
         }
         prev.die();

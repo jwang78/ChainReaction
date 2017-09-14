@@ -1,9 +1,9 @@
-package ChainReaction.view;
+package view;
 
 
 import java.io.IOException;
 
-import ChainReaction.game.Constants;
+import game.Constants;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

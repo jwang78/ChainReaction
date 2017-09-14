@@ -1,4 +1,4 @@
-package ChainReaction.game;
+package game;
 
 import java.util.Map;
 

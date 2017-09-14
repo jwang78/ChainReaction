@@ -1,4 +1,4 @@
-package ChainReaction.model;
+package model;
 
 /**
  * Represents the different types of players.

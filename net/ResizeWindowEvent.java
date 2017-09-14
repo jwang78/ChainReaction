@@ -1,4 +1,4 @@
-package ChainReaction.net;
+package net;
 
 import javafx.event.Event;
 import javafx.event.EventType;

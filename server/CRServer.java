@@ -1,4 +1,4 @@
-package ChainReaction.server;
+package server;
 
 import java.io.IOException;
 
@@ -19,10 +19,10 @@ import java.util.concurrent.Executors;
 
 import com.sun.net.httpserver.HttpServer;
 
-import ChainReaction.game.ChainReaction;
-import ChainReaction.model.Move;
-import ChainReaction.model.CRBoard;
-import ChainReaction.model.Player;
+import game.ChainReaction;
+import model.Move;
+import model.CRBoard;
+import model.Player;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;

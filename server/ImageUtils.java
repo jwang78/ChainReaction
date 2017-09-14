@@ -1,4 +1,4 @@
-package ChainReaction.server;
+package server;
 
 import javafx.scene.image.Image;
 

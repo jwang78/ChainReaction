@@ -1,26 +1,26 @@
-package ChainReaction.server;
+package server;
 
 import java.util.Map;
 
-import ChainReaction.game.ChainReaction;
-import ChainReaction.model.Player;
-import ChainReaction.view.Controls;
+import game.ChainReaction;
+import model.Player;
+import view.Controls;
 import javafx.event.ActionEvent;
 import javafx.scene.Node;
 
 public class UselessControls implements Controls {
-    // The OthelloServer associated with these controls
+    // The ChainReactionServer associated with these controls
     private CRServer _server;
     // The gameID this controls is associated with
     private int _gameID;
     
     /**
      * Creates a new UselessControls
-     * @param othelloServer The OthelloServer instance
+     * @param ChainReactionServer The ChainReactionServer instance
      * @param gameID The game this Controls is associated with.
      * */
-    public UselessControls(CRServer othelloServer, int gameID) {
-        _server = othelloServer;
+    public UselessControls(CRServer ChainReactionServer, int gameID) {
+        _server = ChainReactionServer;
         _gameID = gameID;
     }
 

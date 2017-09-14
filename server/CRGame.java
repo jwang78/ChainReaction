@@ -1,13 +1,13 @@
-package ChainReaction.server;
+package server;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import ChainReaction.game.ChainReaction;
-import ChainReaction.model.Player;
-import ChainReaction.view.BoardView;
-import ChainReaction.view.Controls;
+import game.ChainReaction;
+import model.Player;
+import view.BoardView;
+import view.Controls;
 
 /**
  * Wrapper for an CR instance.
