@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import ChainReaction.game.Constants?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.control.Label?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Rectangle fx:id="_square">
+			<height>
+				<Constants fx:constant="TILE_WIDTH" />
+			</height>
+			<width>
+				<Constants fx:constant="TILE_WIDTH" />
+			</width>
+			<fill>
+				<Constants fx:constant="TILE_BACKGROUND" />
+			</fill>
+			<stroke>
+				<Constants fx:constant="BORDER_STROKE" />
+			</stroke>
+		</Rectangle>
+		<Circle fx:id="_circle">
+			<radius>
+				<Constants fx:constant="PIECE_WIDTH" />
+			</radius>
+		</Circle>
+		<Label fx:id="_qtyLabel">
+		</Label>
+	</children>
+</StackPane>
+

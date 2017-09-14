@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.GridPane?>
+
+<!-- Hmm... I thought there would be more to this file... Oops I guess... -->
+<GridPane fx:id="_boardPane" xmlns:fx="http://javafx.com/fxml/1">
+</GridPane>
+
